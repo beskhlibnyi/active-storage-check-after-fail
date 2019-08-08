@@ -1,1 +1,3 @@
-= @page.title
+- if @page.bg_image.attached?
+  = @page.title
+  = image_tag @page.bg_image
